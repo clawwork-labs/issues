@@ -1,0 +1,50 @@
+name: Feature request
+description: Suggest a ClawWork improvement or missing capability
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for product ideas, missing capabilities, or workflow improvements.
+
+        Do **not** include secrets, API keys, private customer data, full access tokens, or sensitive logs.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what blocks you today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like ClawWork to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workaround
+      description: What have you tried instead?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who benefits, and how often would this be used?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Agent runtime
+        - Tools
+        - Web UI
+        - API
+        - Auth / GitHub / integrations
+        - Billing / usage
+        - Documentation
+        - Unknown / other
+    validations:
+      required: true
